@@ -1,17 +1,3 @@
 <h1>Create a task</h1>
 
-<%= form_for(@task) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-
-  <%= f.label :description %>
-  <%= f.text_field :description %>
-
-  <%= f.label :target_date %>
-  <%= f.date_field :target_date %>
-
-  <%= f.label :owner %>
-  <%= f.text_field :owner %>
-
-  <%= f.submit %>
-<% end %>
+<%= render 'form' %>
